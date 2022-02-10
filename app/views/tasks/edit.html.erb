@@ -1,6 +1,6 @@
-<h1>id: <%= @task.id %> のメッセージ編集ページ</h1>
+<h1>id: <%= @tasks.id %> のメッセージ編集ページ</h1>
 
-<%= form_with(model: @task) do |f| %>
+<%= form_with(model: @tasks) do |f| %>
   <%= f.label :content, 'メッセージ' %>
   <%= f.text_field :content %>
 
