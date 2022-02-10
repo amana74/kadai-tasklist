@@ -21,7 +21,7 @@ class TasksController < ApplicationController
       flash.now[:danger] = 'task が投稿されませんでした'
       render :new
   end
-
+end
   def edit
       def edit
     @task = Task.find(params[:id])
@@ -52,3 +52,4 @@ class TasksController < ApplicationController
       
   end
 end
+
